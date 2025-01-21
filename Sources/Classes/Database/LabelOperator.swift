@@ -51,7 +51,7 @@ class LabelOperator: LabelOperations {
                     label = LabelEntity(id: rowId, name: name, value: value)
                     Logger.logDebug(Constants.Messages.Insert.Label.success)
                 } else {
-                    Logger.logError(Constants.Messages.Insert.Label.failed)
+                    //Logger.logError(Constants.Messages.Insert.Label.failed)
                 }
             } else {
                 let errorMessage = String(cString: sqlite3_errmsg(self.database))
